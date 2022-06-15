@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.set_page_config(page_title="Spotify Dev",layout="wide")
+st.set_page_config(page_title="Spotify Weekly",layout="wide")
 st.title("Spotify")
