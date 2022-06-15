@@ -1056,6 +1056,23 @@ aiohttp = ">=3.6,<4.0"
 backoff = ">=1.10.0,<2.0.0"
 
 [[package]]
+name = "spotipy"
+version = "2.19.0"
+description = "A light weight Python library for the Spotify Web API"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = ">=2.25.0"
+six = ">=1.15.0"
+urllib3 = ">=1.26.0"
+
+[package.extras]
+doc = ["Sphinx (>=1.5.2)"]
+test = ["mock (==2.0.0)"]
+
+[[package]]
 name = "stack-data"
 version = "0.3.0"
 description = "Extract data from python stack frames and tracebacks for informative displays"
@@ -1296,7 +1313,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c622544386add6c2dca5ea67149ac9cd5a2f0514d7ded038968dd940594be32d"
+content-hash = "0e2bfdd1eb93e04fe6081892f77a377da06d8a1a1358d5a725f8e88fdd7b0970"
 
 [metadata.files]
 aiohttp = [
@@ -2198,6 +2215,11 @@ soupsieve = [
 spotify = [
     {file = "spotify-0.10.2-py3-none-any.whl", hash = "sha256:be9d05d6f419f1fba0c02b8123d716082597d4a1fa505b1b2f543d351afb1e30"},
     {file = "spotify-0.10.2.tar.gz", hash = "sha256:f8e64eefac3f5cbd6718a2b7d43d244707d6974fbc30664fa0c653c56f3941ca"},
+]
+spotipy = [
+    {file = "spotipy-2.19.0-py2-none-any.whl", hash = "sha256:dd6de229351bb6cf4d9bc169c5e183288da795f5a8265968dd98e95c037f9e7a"},
+    {file = "spotipy-2.19.0-py3-none-any.whl", hash = "sha256:766f9ef96d61851d7884c4553f2de2527c3af01df603985f6987543bb28e3ff5"},
+    {file = "spotipy-2.19.0.tar.gz", hash = "sha256:904f6e813dba837758e9510c1bee51d7ca217f169246625a13e693733dc33543"},
 ]
 stack-data = [
     {file = "stack_data-0.3.0-py3-none-any.whl", hash = "sha256:aa1d52d14d09c7a9a12bb740e6bdfffe0f5e8f4f9218d85e7c73a8c37f7ae38d"},

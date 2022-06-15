@@ -8,6 +8,7 @@ authors = ["Jayantha Gopala <jayantha.gopala@sky.uk>"]
 python = "^3.9"
 streamlit = "^1.2.0"
 spotify = "^0.10.2"
+spotipy = "^2.19.0"
 
 [tool.poetry.dev-dependencies]
 
