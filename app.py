@@ -8,4 +8,6 @@ CLIENT_SECRET = "6303b01284414894acd0dff37f3ed3a5"
 st.set_page_config(page_title="Spotify Weekly",layout="wide")
 st.title("Spotify Weekly")
 
-spotify = spotipy.Spotify(auth_manager=SpotifyClientCredentials())
+#Authentication - without user
+client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
+sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
