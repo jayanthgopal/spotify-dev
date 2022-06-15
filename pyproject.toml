@@ -7,6 +7,7 @@ authors = ["Jayantha Gopala <jayantha.gopala@sky.uk>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 streamlit = "^1.2.0"
+spotify = "^2.6.1"
 
 [tool.poetry.dev-dependencies]
 
