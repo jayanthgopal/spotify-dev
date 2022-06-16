@@ -20,7 +20,7 @@ track_uris = [x["track"]["uri"] for x in sp.playlist_tracks(playlist_URI)["items
 table_data = {}
 
 index = 0
-df = pd.DataFrame(columns =  ["Track", "Artist", "Genre"])
+df = pd.DataFrame(columns =  ["Track", "Artist", "Track Popularity"])
 
 for track in sp.playlist_tracks(playlist_URI)["items"]:
     #URI
@@ -43,7 +43,7 @@ for track in sp.playlist_tracks(playlist_URI)["items"]:
     
     #Popularity of the track
     track_pop = track["track"]["popularity"]
-    df.loc[index] = [track_name, artist_name, artist_genres]
+    df.loc[index] = [track_name, artist_name, track_pop]
     index = index + 1
 
 st.table(data=df)    
