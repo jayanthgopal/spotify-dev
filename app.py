@@ -13,7 +13,7 @@ st.title("Spotify Weekly")
 client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
-playlist_link = "https://open.spotify.com/playlist/37i9dQZF1EUMDoJuT8yJsl?si=f694579d3b29425a"
+playlist_link = "https://open.spotify.com/playlist/5wJ6oMDRwPvuBQyPmF9P6O?si=01ac2590252e4193"
 playlist_URI = playlist_link.split("/")[-1].split("?")[0]
 track_uris = [x["track"]["uri"] for x in sp.playlist_tracks(playlist_URI)["items"]]
 
